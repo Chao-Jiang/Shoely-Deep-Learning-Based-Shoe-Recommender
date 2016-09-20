@@ -2,7 +2,7 @@
 ## Motivation
 
 ## Data Collection
-![alt tag] (http://www.dropbox.com/home/Shely_Images?preview=EiegShoes2.png)
+![alt tag] (https://github.com/ShahramFarhadi/Shoely-Deep-Learning-Based-Shoe-Recommender/blob/master/Images/Kids_Average.pn)
 ## Image Retrieval
 ## TensorFLow for Shoes
 ## Sample Queries
