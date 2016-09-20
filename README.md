@@ -2,7 +2,7 @@
 ## Motivation
 
 ## Data Collection
-![alt text] (https://www.dropbox.com/home/Shely_Images?preview=EiegShoes2.png "Description goes here")
+![alt tag] (https://www.dropbox.com/home/Shely_Images?preview=EiegShoes2.png)
 ## Image Retrieval
 ## TensorFLow for Shoes
 ## Sample Queries
