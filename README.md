@@ -1,3 +1,7 @@
 # Shoely-Deep-Learning-Based-Shoe-Recommender
-## Project Motivation
+## Motivation
 
+## Data Collection
+## Image Retrieval
+## TensorFLow for Shoes
+## Sample Queries
