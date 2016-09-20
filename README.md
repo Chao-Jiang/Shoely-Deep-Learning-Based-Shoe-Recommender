@@ -1,1 +1,0 @@
-# Shoely-Image-Based-Shoe-Recommender
