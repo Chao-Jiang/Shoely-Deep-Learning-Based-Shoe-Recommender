@@ -2,7 +2,7 @@
 ## Motivation
 
 ## Data Collection
-!(https://www.dropbox.com/home/Shely_Images?preview=Pearson+RGB.png)
+![alt text] (https://www.dropbox.com/home/Shely_Images?preview=EiegShoes2.png "Description goes here")
 ## Image Retrieval
 ## TensorFLow for Shoes
 ## Sample Queries
