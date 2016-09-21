@@ -5,8 +5,7 @@ Shoely utilizes the power of images to help shoppers find the shoes that they li
 
 ## Data Collection
 The data for this project was collected by scraping http://www.onlineshoes.com/ for Women, Men anb Kids Shoes. For each shoe, image, category name and price were saved in a database with 40000 entries (24000 Women, 10000 Men and 6000 Kids). All the images have the same number of pixels, same angle and white backgound.   
-![men_average](https://cloud.githubusercontent.com/assets/19718965/18692505/92122b24-7f4f-11e6-9775-3b961b1c926e.png)
-
+![screen shot 2016-09-20 at 6 03 42 pm](https://cloud.githubusercontent.com/assets/19718965/18694161/b1e4f280-7f5c-11e6-8687-20cfcb65eb4a.png)
 ## Image Retrieval
 ## TensorFLow for Shoes
 ## Sample Queries
