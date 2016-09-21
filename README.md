@@ -22,3 +22,18 @@ Before heading to the next section, below is a cool picture of EigenShoes that i
 We have added a layer of shoe images to AlexNet. [AlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet) is a pre-trained convolutional neural network that has been trained on ~1,000,000 images. After getting trained on the shoe images, by adding only one layer to AlexNet, the new deep CNN can now transform the input shoe image into a 40 dimensional feature space. It is then much easiers to find similar images in the new space (using kNN for example). This method really shines, as you'll see in the next section.  
 
 ## Sample Queries
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/19718965/18697612/c0a57310-7f77-11e6-8091-5b4b3c87d11b.png">
+</p>
+
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/19718965/18697621/d1c98960-7f77-11e6-917e-7c5375eead02.png">
+</p>
+
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/19718965/18697627/e8e7ba18-7f77-11e6-87d0-d96f70fdf488.png">
+</p>
+
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/19718965/18697628/eb7f63e8-7f77-11e6-8b73-7e1f27207df0.png">
+</p>
