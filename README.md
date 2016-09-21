@@ -18,10 +18,11 @@ Before heading to the next section, below is a cool picture of EigenShoes that i
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18697195/d5516a8e-7f73-11e6-8934-0f92f10c1253.png">
 </p>
-## Feature Selection using Deep Nueral Networks
+## Feature Selection using Deep Neural Networks
 We have added a layer of shoe images to AlexNet. [AlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet) is a pre-trained convolutional neural network that has been trained on ~1,000,000 images. After getting trained on the shoe images, by adding only one layer to AlexNet, the new deep CNN can now transform the input shoe image into a 40 dimensional feature space. It is then much easiers to find similar images in the new space (using kNN for example). This method really shines, as you'll see in the next section.  
 
 ## Sample Queries
+In this section, we show few queries that are designed to compare three different algorithms that are described above namely BruteForce Similarity Search, Approximate Nearest Neighbors and Deep Learning. 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18697612/c0a57310-7f77-11e6-8091-5b4b3c87d11b.png">
 </p>
