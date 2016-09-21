@@ -2,7 +2,6 @@
 ## Motivation
 "A picture is worth a thousand words", you might have heard this idiom and we might not agree that one needs exactly 1000 words to describe an image but I can assure you that a picture of a shoe contains more information that I can convey with twenty something shoe-describing words that I know. That number is probably different for different groups of people and most likely I'll be in a cluster surronded by PhDs who didn't have time to look up shoes online. The fact that we cannot describe all the information in, most if not all, pictures using words only is not surprising as our languages are not as evolved as our vision and words were actualy used to communicate observations in the physical world or hallucinations.
 Shoely utilizes the power of images to help shoppers find the shoes that they like at the best price. It learns about a person's style and is able to recommend new shoes based on prevoius likes/dislikes or even by looking through your photos. Shoely can although be incorporated into an image-based style recommender that can help, as an example,find the shoes that look good with other apparel. 
-
 ## Data Collection
 The data for this project was collected by scraping http://www.onlineshoes.com/ for Women, Men anb Kids Shoes. For each shoe, image, category name and price were saved in a database with 40000 entries (24000 Women, 10000 Men and 6000 Kids). All the images have the same number of pixels, taken at the same angle and have white backgound. 
 <p align="center">
@@ -16,7 +15,10 @@ Before discussing the transformations to lower dimensional feature space, let's 
 </p>
 Calculating Pearson coefficient of the query image against all the images in database (in the original pixel domain) is not efficient and increases the run time. Note that all the backend calculations should be completed in a few seconds. One apprach will be to divide the databse into different clusters and compare the query image with a representative image of each cluster and perform the caculation only in the most similar cluster. This can significantly reduce the computational time, however, it turns out that most of the clustering algorithms (k-Means, ...) fail at this high dimensions (CURSE OF DIMENSIONALITY) and we can only get approximate nearest neighbors. We used Approximate Nearest Neighbors Oh Yeah! [ANNOY](https://github.com/spotify/annoy) and as you'd expect it works well for images that are well algined with those of the database. You'll see its performance in the "Sample Queries" section.
 Before heading to the next section, below is a cool picture of EigenShoes that is generated using 30 randomly genearted Men's shoes.  
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/19718965/18697195/d5516a8e-7f73-11e6-8934-0f92f10c1253.png">
+</p>
+## Feature Selection using Deep Nueral Networks
+We have added a layer of shoe images to AlexNet. [AlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet) is a pre-trained convolutional neural network that has been trained on ~1,000,000 images. After getting trained on the shoe images, by adding only one layer to AlexNet, the new deep CNN can now transform the input shoe image into a 40 dimensional feature space. It is then much easiers to find similar images in the new space (using kNN for example). This method really shines, as you'll see in the next section.  
 
-
-## TensorFLow for Shoes
 ## Sample Queries
