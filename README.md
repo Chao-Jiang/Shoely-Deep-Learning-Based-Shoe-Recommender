@@ -14,7 +14,8 @@ Before discussing the transformations to lower dimensional feature space, let's 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18696515/97a03f9e-7f6e-11e6-9dbb-e5e1f17f20e4.png">
 </p>
-Even if the results are 
+Calculating Pearson coefficient of the query image against all the images in database (in the original pixel domain) is not efficient and increases the run time. Note that all the backend calculations should be completed in a few seconds. One apprach will be to divide the databse into different clusters and compare the query image with a representative image of each cluster and perform the caculation only in the most similar cluster. This can significantly reduce the computational time, however, it turns out that most of the clustering algorithms (k-Means, ...) fail at this high dimensions (CURSE OF DIMENSIONALITY) and we can only get approximate nearest neighbors. We used Approximate Nearest Neighbors Oh Yeah! [ANNOY](https://github.com/spotify/annoy) and as you'd expect it works well for images that are well algined with those of the database. You'll see its performance in the "Sample Queries" section.
+Before heading to the next section, below is a cool picture of EigenShoes that is generated using 30 randomly genearted Men's shoes.  
 
 
 ## TensorFLow for Shoes
