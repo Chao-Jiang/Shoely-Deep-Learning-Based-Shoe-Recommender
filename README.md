@@ -12,11 +12,9 @@ The data for this project was collected by scraping http://www.onlineshoes.com/ 
 Image retrieval is a classic problem and is defined as: Given a query image search the database of images and return similar images. While this problem seems simple, finding a general solution to this has been a challenge for computer visionist for a long time. The problem arises from the fact that similarity measures are different for humans and computers. From a computer's point of view an image is a 3D matrix (can be expanded to a 43200=120x120x3 dimensional vector in the case of our images) which is defined by all these pixel values. We, on the other hand, percieve images as a collection of objects in a much lower dimensional space. The problem then becomes transferring the images from pixel space to a feature space where the features are the same (or equivalent) to what a human brain sees in an image. Differnt solutions are proposed for dimensioanlity reduction in images are proposed (Principal Component Analysis, Image Hashing, Bag of Words and Deep Learning Convolutional Neural Networks). 
 Before discussing the transformations to lower dimensional feature space, let's look at similarity in the pixel space. The simialarity of two vectors (agian our images are 43200 dimensional vectors) is calculated using Peasrson or Cosine similarity formulas. If the shoes have the same orientation and are located in the same section of the image, the similar shoes will have higher Pearson coefficient. This is the case for the images in our database and as you can see this simple approach works fairly well.
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/19718965/18696309/e5fe2194-7f6c-11e6-895c-7d9c6dce9347.png">
+  <img src="https://cloud.githubusercontent.com/assets/19718965/18696515/97a03f9e-7f6e-11e6-9dbb-e5e1f17f20e4.png">
 </p>
-
-
-
+Even if the results are 
 
 
 ## TensorFLow for Shoes
