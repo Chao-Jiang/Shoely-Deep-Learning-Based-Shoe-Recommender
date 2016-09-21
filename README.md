@@ -23,18 +23,19 @@ We have added a layer of shoe images to AlexNet. [AlexNet](https://github.com/BV
 
 ## Sample Queries
 In this section, we show few queries that are designed to compare three different algorithms that are described above namely BruteForce Similarity Search, Approximate Nearest Neighbors and Deep Learning. 
+In this case all three methods return acceptable results.
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18697612/c0a57310-7f77-11e6-8091-5b4b3c87d11b.png">
 </p>
-
+BruteForce returns results that are not are very satisfing. This is cause by pixel level and possibly colors. 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18697621/d1c98960-7f77-11e6-917e-7c5375eead02.png">
 </p>
-
+This image is different from iamges in the database and is stretched along the diagonal. While BruteForce and ANNOY completely fail, deep learning returns leather shoes and at least two of them can be acceptable. Note that this is limited database and we might not have more similar images. 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18697627/e8e7ba18-7f77-11e6-87d0-d96f70fdf488.png">
 </p>
-
+This is where deep learning truely shines. The other two algorithms completely fail which is mainly driven by the fact that query image has a different angle than the database images.
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/19718965/18697628/eb7f63e8-7f77-11e6-8b73-7e1f27207df0.png">
 </p>
